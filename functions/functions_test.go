@@ -47,11 +47,17 @@ var _ = Describe("min() with ordinary types", func() {
 			})
 
 			Context("when argument is a variable", func() {
-				It("works", func() {
+				It("works, but 👀it truncates the other variable", func() {
 					b := 2.1
 					Expect(functions.Min(1, int(b))).To(Equal(1))
 				})
 			})
+		})
+	})
+
+	Context("when need to operate on other types", func() {
+		It("requires a separate function, operating on these types", func() {
+			Expect(functions.FloatMin(1.0, 2.0)).To(Equal(1.0))
 		})
 	})
 })

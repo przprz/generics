@@ -7,6 +7,13 @@ func Min(a, b int) int {
 		return b
 	}
 }
+func FloatMin(a, b float64) float64 {
+	if a < b {
+		return a
+	} else {
+		return b
+	}
+}
 
 // won't compile:
 // functions/functions.go:7:5: invalid operation: a < b (operator < not defined on interface)
