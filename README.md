@@ -1,6 +1,9 @@
 # Generics in Go
 
-This is an example of a simple function using generic types in Golang.
+An example of a function calculating smaller of two numbers.
+
+First it was implemented in terms of non-generic types,
+then Golang's generic types were used to learn how they work and test limitations.
 
 ## Installation
 
@@ -15,10 +18,12 @@ go get github.com/onsi/gomega/...
 
 ## Usage
 
-Read the tests and run them to see how it works.
+1. Run the tests:
 
 ```shell
 ginkgo -r -v
 ```
 
-Experiment with the code.
+2. Read the tests and implementation to dive deeper.
+
+3. Experiment with the code.
